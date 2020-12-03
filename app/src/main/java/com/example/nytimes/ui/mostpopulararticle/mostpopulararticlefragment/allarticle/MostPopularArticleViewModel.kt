@@ -4,11 +4,11 @@ import android.util.Log
 import com.example.cleanarchproject.ui.base.BaseViewModel
 import com.example.gulftech_androidtask.util.SingleLiveEvent
 import com.example.nytimes.data.model.Result
-import com.example.nytimes.data.repository.MostPopularArticleViewed
+import com.example.nytimes.data.repository.MostPopularArticleViewedRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
-class MostPopularArticleViewModel(private val repository: MostPopularArticleViewed) :
+class MostPopularArticleViewModel(private val repository: MostPopularArticleViewedRepository) :
     BaseViewModel() {
 
     val articleList = SingleLiveEvent<List<Result>>()
